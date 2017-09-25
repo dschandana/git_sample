@@ -1,5 +1,5 @@
-#Computing solution
-#Part of laplace.py
+# Computing solution = u
+# Part of laplace.py
 
 import numpy as np
 import gauss1D
