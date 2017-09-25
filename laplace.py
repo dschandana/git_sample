@@ -2,10 +2,15 @@
 
 # Solves Laplace 2D equation using Finite element method
 # Problem description: Square domain
-# with nx = ny = number of elements
-# per side in x and y directions
-# use 'Tri'  for triangular elements
-#     'Quad' for rectangular elements
+# Specify:
+# Discretization size
+#         nx = ny = number of elements
+#         per side in x and y directions
+# Element type
+#         'Tri'  for triangular elements
+#         'Quad' for rectangular elements
+# Degree   1 (linear)
+#          2 (quadratic)
 
 # Code by: Sai Chandana Divi (s.c.divi@tue.nl)
 # Doctoral student, TU/e
