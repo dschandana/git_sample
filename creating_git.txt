@@ -1,0 +1,13 @@
+Follow the following steps to create your own git repository
+for an existing directory
+
+$ git init
+$ git add <file_name>
+$ git commit -m 'message'
+
+go to github.com and create a repository
+
+$ git remote add <remote_name> https://github.com/username/filename.git
+$ git pull <remote_name> master
+$ git push <remote_name> master
+
