@@ -1,7 +1,5 @@
 #! /usr/bin/env python3
 
-
-
 # Solves Laplace 2D equation using Finite element method
 # Problem description: Square domain
 # Specify:
@@ -84,11 +82,9 @@ def main(degree,nx,ny,dom,elemType):
 
   print(z)
   # Plot the surface.
-  surf = ax.plot_surface(x, y, z, cmap=cm.coolwarm,linewidth=0, antialiased=False)
-
+  surf = ax.plot_trisurf(x, y, z, cmap=cm.Spectral,linewidth=0, antialiased=False)
 
   # Customize the z axis.
-  ax.set_zlim(0,2)
   ax.zaxis.set_major_locator(LinearLocator(10))
   ax.zaxis.set_major_formatter(FormatStrFormatter('%.02f'))
 
@@ -99,4 +95,4 @@ def main(degree,nx,ny,dom,elemType):
 
   return
 
-main(degree=1,nx=2,ny=2,dom=([0,1,0,1]),elemType='Quad')
+main(degree=1,nx=10,ny=10,dom=([0,1,0,1]),elemType='Quad')
